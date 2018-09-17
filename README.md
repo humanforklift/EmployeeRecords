@@ -14,7 +14,7 @@ This was built using ASP.net MVC5, with HTML5, CSS3, and bootstrap 3.7.
 * Open RadfordsTechnicalExercise.sln using Visual Studio 2017
 * From the debug menu, select Run Without Debugging
 
-####Option 2 :
+#### Option 2 :
 * Click 'Clone or Download' button.
 * Copy https://github.com/humanforklift/EmployeeRecords.git to clipboard
 * Open command line
