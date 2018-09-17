@@ -10,17 +10,17 @@ This was built using ASP.net MVC5, with HTML5, CSS3, and bootstrap 3.7.
 #### Option 1 :
 * Click 'Clone or Download' button.
 * Select Download ZIP
-* Retrieve downloaded file (file will download as "numbers-to-words-master")
-* Open CucumberTechnicalTest.sln using Visual Studio 2017
+* Retrieve downloaded file (file will download as 'EmployeeRecords-master')
+* Open RadfordsTechnicalExercise.sln using Visual Studio 2017
 * From the debug menu, select Run Without Debugging
 
 ####Option 2 :
 * Click 'Clone or Download' button.
-* Copy 'https://github.com/kellymarjorie/numbers-to-words.git' to clipboard
+* Copy https://github.com/humanforklift/EmployeeRecords.git to clipboard
 * Open command line
-* Enter 'git clone https://github.com/kellymarjorie/numbers-to-words.git ./numberstowords'
-* Navigate to numberstowords folder
-* Open CucumberTechnicalTest.sln using Visual Studio 2017
+* Enter 'git clone https://github.com/humanforklift/EmployeeRecords.git' ./employeerecords
+* Navigate to employeerecords folder
+* Open RadfordsTechnicalExercise.sln using Visual Studio 2017
 * From the debug menu, select Run Without Debugging
 
 ### Brief notes/observations
