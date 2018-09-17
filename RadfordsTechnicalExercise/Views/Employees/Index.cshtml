@@ -1,0 +1,85 @@
+﻿@model IEnumerable<RadfordsTechnicalExercise.Models.Employee>
+
+@{
+    ViewBag.Title = "Michael's Company";
+}
+
+<h1 class="title">Employee Index</h1>
+
+<button type="button" class="btn btn-success">
+	<i class="fas fa-plus-circle"></i> @Html.ActionLink("Create New", "Create")
+</button>
+@if ( Model.Any( ) )
+{
+<button type="button" class="btn btn-default">
+	<i class="fas fa-file-export"></i> @Html.ActionLink( "Export List To Excel" , "Export" )
+</button>
+<button type="button" class="btn btn-default">
+	<i class="fas fa-print"></i> @Html.ActionLink( "Print this information" , "Print" )
+</button>
+}
+
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MiddleInitial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HomePhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CellPhoneNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OfficeExtension)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td class="cell-centre">
+            @Html.DisplayFor(modelItem => item.MiddleInitial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HomePhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CellPhoneNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OfficeExtension)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxNumber)
+        </td>
+        <td class="cell-centre">
+            @Html.DisplayFor(modelItem => item.IsActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
